@@ -19,9 +19,7 @@ The app.py script allows you to input text and receive a summarized version base
    ```bash
    git clone https://github.com/Arashomranpour/llm_summarization.git
    cd llm_summarization
-2. install dependencies:
+2. install dependencies and Run the file:
   ```bash
   pip install transformers
-3. Run the file:
-  ```bash
   python app.py
