@@ -1,25 +1,45 @@
-# LLM Summarization
+<div align="center">
 
-This repository provides a solution for summarizing text using large language models (LLMs). The focus is on leveraging state-of-the-art models from HuggingFace to perform text summarization effectively.
+# 📚 LLM PDF Summarization
 
-## Files
+**Upload a PDF and get a concise summary generated locally by the LaMini-Flan-T5 model from Hugging Face.**
 
-- **app.py**: Python script that implements the summarization functionality using a large language model.
+![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white)
+![Transformers](https://img.shields.io/badge/🤗_Transformers-FFD21E)
+![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?logo=pytorch&logoColor=white)
+![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?logo=langchain&logoColor=white)
+![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?logo=streamlit&logoColor=white)
 
-## Usage
-The app.py script allows you to input text and receive a summarized version based on the capabilities of the chosen large language model.
-## Requirements
+</div>
 
-- Python 3.x
-- HuggingFace Transformers
+---
 
-## Installation
+## ✨ Features
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/Arashomranpour/llm_summarization.git
-   cd llm_summarization
-2. install dependencies and Run the file:
-  ```bash
-  pip install transformers
-  python app.py
+- 📤 Upload a PDF in the browser.
+- 👀 Side-by-side view: the original document and the generated summary.
+- 🧠 Summarization with **`MBZUAI/LaMini-Flan-T5-248M`** through the Hugging Face `summarization` pipeline.
+- ✂️ PDF text is loaded with LangChain's `PyPDFLoader` and split into chunks before summarizing.
+
+## 🚀 Getting Started
+
+```bash
+git clone https://github.com/Arashomranpour/llm_summarization.git
+cd llm_summarization
+pip install streamlit transformers torch langchain pypdf sentencepiece
+streamlit run "app (3).py"
+```
+
+The model is downloaded from Hugging Face on the first run.
+
+## 📁 Project Structure
+
+```
+.
+├── app (3).py    # Streamlit app + summarization pipeline
+└── README.md
+```
+
+## 🛠️ Tech Stack
+
+`Streamlit` · `Hugging Face Transformers` · `PyTorch` · `LangChain` · `LaMini-Flan-T5`
